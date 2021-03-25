@@ -6,6 +6,18 @@ import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 function Task() {
+  const handleRestart = (e) => {
+    e.preventDefault();
+
+    //restart
+  };
+
+  const handleDelete = (e) => {
+    e.preventDefault();
+
+    //delete
+  };
+
   return (
     <div className="day__task">
       <div className="day__taskName">
@@ -15,8 +27,8 @@ function Task() {
       <div className="day__taskInfo">
         <span className="taskInfo__time">15:00 - 19:00</span>
         <span className="timeTotal">4:00</span>
-        <PlayArrowIcon onClick="" />
-        <MoreVertIcon onClick="" />
+        <PlayArrowIcon onClick={handleRestart} />
+        <MoreVertIcon onClick={handleDelete} />
       </div>
     </div>
   );
