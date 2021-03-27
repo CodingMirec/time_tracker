@@ -2,8 +2,12 @@ import React from "react";
 
 import "./ChatRoom.css";
 
-function ChatRoom() {
-  return <div className="chatRoom">well fuck</div>;
+function ChatRoom({ title }) {
+  return (
+    <div className="chatRoom">
+      <span>#</span> {title}
+    </div>
+  );
 }
 
 export default ChatRoom;
