@@ -8,7 +8,7 @@ function Team() {
     <div className="team">
       <Sidebar />
       <div className="team__layout">
-        <h1 className="team__title">Managing Team</h1>
+        <h1 className="team__title">Managing Team & Groups</h1>
         <div className="team__container">
           <div className="team__nav">Top meh</div>
           <div className="team__members"></div>
