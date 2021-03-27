@@ -3,6 +3,8 @@ import "./Chat.css";
 
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+import ChatInput from "./ChatInput";
 
 function Chat() {
   return (
@@ -10,9 +12,9 @@ function Chat() {
       <div className="chat__header">
         <div className="header__left">
           <h4>
-            # Your Room
-            <StarBorderOutlinedIcon />
+            <FiberManualRecordIcon /> Your Room
           </h4>
+          <StarBorderOutlinedIcon />
         </div>
         <div className="header__right">
           <p>
@@ -21,6 +23,7 @@ function Chat() {
         </div>
       </div>
       <div className="chat__messages">Messages</div>
+      <ChatInput />
     </div>
   );
 }

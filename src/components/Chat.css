@@ -18,13 +18,15 @@
 
 .header__left h4 {
   display: flex;
-  text-transform: lowercase;
   margin-right: 10px;
+  align-items: center;
 }
 
 .header__left h4 .MuiSvgIcon-root {
-  margin-left: 10px;
-  font-size: 22px;
+  font-size: 18px;
+  margin-right: 5px;
+  color: rgb(0, 168, 0);
+  margin-bottom: -1px;
 }
 
 .header__right {
