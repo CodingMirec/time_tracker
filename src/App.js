@@ -14,6 +14,7 @@ import { Register } from "./pages/Register";
 import { useAuth } from "./auth";
 import Settings from "./pages/Settings";
 import Team from "./pages/Team";
+import Projects from "./pages/Projects";
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const [logged] = useAuth();
@@ -39,6 +40,7 @@ export default function App() {
           <Route exact path="/login">
             <Login />
           </Route>
+          <PrivateRoute exact path="/projects" component={Projects} />
           <PrivateRoute exact path="/team" component={Team} />
           <PrivateRoute exact path="/settings" component={Settings} />
           <PrivateRoute path="/" component={Home} />
