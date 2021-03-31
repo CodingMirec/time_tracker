@@ -4,7 +4,9 @@ import "./Chat.css";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+
 import ChatInput from "./ChatInput";
+import Message from "./Message";
 
 function Chat() {
   return (
@@ -22,7 +24,9 @@ function Chat() {
           </p>
         </div>
       </div>
-      <div className="chat__messages">Messages</div>
+      <div className="chat__messages">
+        <Message />
+      </div>
       <ChatInput />
     </div>
   );
