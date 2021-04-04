@@ -7,6 +7,7 @@ import DehazeIcon from "@material-ui/icons/Dehaze";
 import TrackerDay from "./TrackerDay";
 
 function Tracker() {
+  const [input, setInput] = useState();
   const [timer, setTimer] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const countRef = useRef(null);
@@ -22,6 +23,8 @@ function Tracker() {
     clearInterval(countRef.current);
     setIsActive(false);
     setTimer(0);
+
+    setInput("");
   };
 
   const formatTime = () => {
@@ -42,6 +45,8 @@ function Tracker() {
               className="tracker__input"
               type="text"
               placeholder="What are you working on?"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
               required
             />
           </div>
