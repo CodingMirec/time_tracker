@@ -1,0 +1,36 @@
+.day__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(71, 71, 71);
+  padding: 10px;
+}
+
+.day__taskName {
+  color: #000;
+}
+
+.taskName {
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.taskProject {
+  margin-right: 10px;
+  font-size: 15px;
+  color: rgb(228, 153, 14);
+}
+
+.day__taskInfo {
+  display: flex;
+  align-items: center;
+}
+
+.day__taskInfo * {
+  margin-left: 20px;
+}
+
+.day__taskInfo .MuiSvgIcon-root {
+  cursor: pointer;
+}

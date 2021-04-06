@@ -22,8 +22,10 @@ function Tracker() {
   const handleEnd = () => {
     clearInterval(countRef.current);
     setIsActive(false);
-    setTimer(0);
 
+    //magic stuff
+
+    setTimer(0);
     setTaskName("");
   };
 
