@@ -11,7 +11,7 @@ function Error404() {
       <div className="error404__layout">
         <div className="error404__container">
           <h1 className="error404__title">Whoops, something went wrong!</h1>
-          <p>The page you are looking for does't exist.</p>
+          <p>The page you are looking for doesn't exist.</p>
           <p>You can use our Sidebar to navigate or check your adress again.</p>
           <Image className="error404__image" />
         </div>
