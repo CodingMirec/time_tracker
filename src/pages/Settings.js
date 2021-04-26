@@ -51,14 +51,6 @@ function Settings() {
     history.push("/login");
   };
 
-  const toggleOn = () => {
-    setIsToggled(true);
-  };
-
-  const toggleOff = () => {
-    setIsToggled(false);
-  };
-
   const handleNameChange = (e) => {
     e.preventDefault();
     setFullname(e.target.value);
@@ -80,17 +72,18 @@ function Settings() {
               <div className="user__details">
                 <div className="user__name">
                   <form>
-                    <input
-                      type="text"
-                      className="user__name"
+                    <span
+                      className="user__nameInput"
+                      contenteditable="true"
                       onChange={(e) => setFullname(e.target.value)}
-                      value={fullname}
-                    ></input>
+                    >
+                      {fullname}
+                    </span>
                     <button hidden type="submit" onClick={handleNameChange}>
                       send
                     </button>
                   </form>
-                  <CreateIcon />
+                  <CreateIcon onClick={handleNameChange} />
                 </div>
                 <span className="user__mail">{username}</span>
               </div>

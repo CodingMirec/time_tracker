@@ -54,8 +54,25 @@
 }
 
 .user__name {
-  font-size: 34px;
-  margin-bottom: -5px;
+  display: flex;
+  align-items: center;
+  margin-left: -6px;
+}
+
+.user__nameInput {
+  font-size: 32px;
+  border: none;
+  margin-right: 10px;
+  padding: 0px 5px;
+}
+
+.user__nameInput:hover {
+  border-bottom: 1px solid #5970f0;
+}
+
+.user__nameInput:focus {
+  border-bottom: 2px solid #5970f0;
+  outline: none;
 }
 
 .user__name > .MuiSvgIcon-root {
@@ -126,6 +143,10 @@ h3 {
   font-size: 15px;
   font-weight: 500;
   max-width: 300px;
+}
+
+.change__form > input:focus {
+  outline: none;
 }
 
 .change__form > button {
