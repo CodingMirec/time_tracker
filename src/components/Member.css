@@ -1,0 +1,27 @@
+.member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(71, 71, 71);
+}
+
+.member div {
+  padding: 15px;
+}
+
+.member__name {
+  flex: 0.4;
+  text-align: center;
+}
+
+.member__email {
+  border-right: 1px solid rgb(71, 71, 71);
+  border-left: 1px solid rgb(71, 71, 71);
+  flex: 0.4;
+  text-align: center;
+}
+
+.member__rights {
+  flex: 0.2;
+  text-align: center;
+}
