@@ -7,7 +7,6 @@ function Member() {
     <div className="member">
       <div className="member__name">Miro Sykora</div>
       <div className="member__email">some@email.net</div>
-
       <div className="member__rights">Admin</div>
     </div>
   );
