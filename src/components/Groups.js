@@ -8,7 +8,7 @@ import "./Groups.css";
 function Groups() {
   return (
     <div className="groups">
-      <div className="group__name">Miro Sykora</div>
+      <div className="group__name">Best Group</div>
       <div className="group__people">
         Miro Sykora / Miro Sykora / Miro Sykora
       </div>
